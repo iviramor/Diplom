@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:61715",
+      "sslPort": 0
+    }
+  },
+  "profiles": {
+		"IIS Express": {
+			"commandName": "IISExpress",
+			"launchBrowser": false,
+			"launchUrl": "Image",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development"
+			}
+		},
+    "viscont.core.service.imageDataTransmission": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "launchUrl": "Image",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "http://localhost:5000",
+      "dotnetRunMessages": "true"
+    },
+		"WSL": {
+			"commandName": "WSL2",
+			"launchBrowser": false,
+			"launchUrl": "http://localhost:5000/Image",
+			"environmentVariables": {
+				"ASPNETCORE_ENVIRONMENT": "Development",
+				"ASPNETCORE_URLS": "http://localhost:5000"
+			},
+			"distributionName": ""
+		}
+  }
+}
