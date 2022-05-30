@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <RootNamespace>Viscont.Core.Service.ImageDataTransmission</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="jpeglib.binaries.win-x64" Version="10.0.1" />
+    <PackageReference Include="mallenom.framework" Version="4.0.3" />
+    <PackageReference Include="mallenom.imaging" Version="5.0.2" />
+    <PackageReference Include="mallenom.imaging.jpeg" Version="3.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\shared\external\Annotations.cs" Link="shared\Annotations.cs" />
+    <Compile Include="..\..\shared\external\Debug.cs" Link="shared\Debug.cs" />
+    <Compile Include="..\..\shared\external\Verify.cs" Link="shared\Verify.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\viscont.core.framework.imageDataTransmission.prj\viscont.core.framework.imageDataTransmission.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="DataBase\" />
+  </ItemGroup>
+</Project>

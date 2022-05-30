@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <LangVersion>10</LangVersion>
+    <RootNamespace>Viscont.Core.Framework.ImageDataTransmission</RootNamespace>
+    <Nullable>enable</Nullable>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\shared\external\Annotations.cs" Link="shared\Annotations.cs" />
+    <Compile Include="..\..\shared\external\Debug.cs" Link="shared\Debug.cs" />
+    <Compile Include="..\..\shared\external\Verify.cs" Link="shared\Verify.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="mallenom.framework" Version="4.0.3" />
+    <PackageReference Include="mallenom.imaging" Version="5.0.2" />
+  </ItemGroup>
+
+</Project>
